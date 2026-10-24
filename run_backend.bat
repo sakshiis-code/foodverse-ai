@@ -1,12 +1,12 @@
 @echo off
 cd /d "%~dp0backend"
-if not exist venv (
+if not exist venv\Scripts\python.exe (
   echo Creating virtual environment...
+  if exist venv rmdir /s /q venv
   python -m venv venv
 )
-call venv\Scripts\activate.bat
 echo Installing libraries (first time takes a few minutes)...
-pip install -r requirements.txt
+venv\Scripts\python.exe -m pip install -r requirements.txt
 if not exist .env (
   copy .env.example .env >nul
   echo.
@@ -15,5 +15,5 @@ if not exist .env (
   pause
   exit /b
 )
-uvicorn main:app --reload
+venv\Scripts\python.exe -m uvicorn main:app --reload
 pause

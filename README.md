@@ -50,7 +50,7 @@ tests/     edge_case_tests.py
 - Voice notes are recorded in the browser (needs ffmpeg on the computer to be transcribed); without ffmpeg they are ignored.
 
 ## Links
-- Demo: _add link_
+- Demo: https://drive.google.com/file/d/1Ay9WEF5wSh0YIWnf3dkZNZElLRXK8Oiw/view?usp=drive_link
 - GitHub: https://github.com/sakshiis-code/foodverse-ai
 
 ## If the AI says a model does not exist
