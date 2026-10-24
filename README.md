@@ -51,7 +51,7 @@ tests/     edge_case_tests.py
 
 ## Links
 - Demo: _add link_
-- GitHub: _add link_
+- GitHub: https://github.com/sakshiis-code/foodverse-ai
 
 ## If the AI says a model does not exist
 Groq retires models regularly. Open http://localhost:8000/models to see what your key can use, then set `GROQ_TEXT_MODEL` / `GROQ_VISION_MODEL` in `backend/.env` and restart the backend.
