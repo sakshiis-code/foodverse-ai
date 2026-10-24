@@ -10,6 +10,7 @@ venv\Scripts\python.exe -m pip install -r requirements.txt
 if not exist .env (
   copy .env.example .env >nul
   echo.
+  // here you can add your Groq key to the .env file
   echo Notepad will open. Paste your Groq key after GROQ_API_KEY= , save, close it, then run this file again.
   notepad .env
   pause
